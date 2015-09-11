@@ -228,11 +228,11 @@ end
 
 ###########Testing
 #To change the file that is read, change the second parameter
-movie_data = MovieData.new("ml-100k", :u2)
+movie_data = MovieData.new("ml-100k", :u1)
 #To change the number of samples from the test set read, change n
-n = 20000
+n = 1000
 movie_test = movie_data.run_test(n)
-puts "The test was run on the first #{n} samples from u2"
+puts "The test was run on the first #{n} samples from u1"
 puts "The average prediction error is #{movie_test.mean}"
 puts "The standard deviation of the errors is #{movie_test.stddev}"
 puts "The RMSE of the prediction is #{movie_test.rms}"
