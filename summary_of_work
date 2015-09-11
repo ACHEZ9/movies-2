@@ -1,0 +1,25 @@
+The url of the public github repo: https://github.com/ACHEZ9/movies-2
+
+The Algorithm:
+
+predict(user, movie)
+	get most_similar users to user
+	for each of the most similar users
+		if the user has rated the movie
+			add thier rating to the total
+			increase the count of movies
+
+	return the average rating
+
+most_similar(user)
+	sort the users in the training set by similiarity to the user. Most similar appear first
+
+similarity(user, user2)
+	get all the movies both users have seen
+
+	for each movie that they have in common
+		add 1 minus their difference in rating/3
+
+
+The Analysis:
+
